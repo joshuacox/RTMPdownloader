@@ -12,7 +12,7 @@ run it declaring the RTMP_URL env of the rtmp stream you want to record, the fil
 you can set the download path like so
 ```
 docker run \
--p /tmp:/tmp \
+-v /tmp:/tmp \
 -e RTMP_URL=rtmp://207.7.154.118/OnDemand/mp4:tlchouse/tlchouse_e8bf93a9-e186-45fd-82e7-e8fd6dbf124b.mp4 \
 -e MPG_OUTPUT=/tmp/named.mpg  \
 joshuacox/rtmpdownloader
